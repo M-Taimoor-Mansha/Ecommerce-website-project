@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ShoPperZ – Your one-stop destination for premium fashion, electronics, and home essentials at unbeatable prices.">
+  <title>ShoPperZ – Premium Online Shopping</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <!-- ======= HEADER ======= -->
+  <header id="main-header">
+    <div class="logo">
+      <a href="#" id="logo-link">Sho<span>P</span>perZ</a>
+    </div>
+
+    <!-- Mobile full-screen menu -->
+    <div class="menu" id="mobile-menu">
+      <a href="#" id="close-btn">
+        <ion-icon name="close" class="close"></ion-icon>
+      </a>
+      <ul>
+        <li><a href="#" class="under">HOME</a></li>
+        <li><a href="#" class="under">SHOP</a></li>
+        <li><a href="#" class="under">OUR PRODUCTS</a></li>
+        <li><a href="#" class="under">CONTACT US</a></li>
+        <li><a href="#" class="under">ABOUT US</a></li>
+      </ul>
+    </div>
+
+    <!-- Desktop search bar -->
+    <div class="search">
+      <input type="text" placeholder="Search products..." id="input" autocomplete="off">
+      <ion-icon class="search-icon" name="search"></ion-icon>
+    </div>
+
+    <!-- Desktop nav -->
+    <nav class="heading" aria-label="Main navigation">
+      <ul>
+        <li><a href="#" class="under">HOME</a></li>
+        <li><a href="#" class="under">SHOP</a></li>
+        <li><a href="#" class="under">OUR PRODUCTS</a></li>
+        <li><a href="#" class="under">CONTACT US</a></li>
+        <li><a href="#" class="under">ABOUT US</a></li>
+      </ul>
+    </nav>
+
+    <!-- Cart & hamburger -->
+    <div class="header-actions">
+      <button class="cart-btn" aria-label="Shopping cart" id="cart-btn">
+        <ion-icon name="cart"></ion-icon>
+        <span class="cart-badge">0</span>
+      </button>
+      <div class="heading1">
+        <ion-icon name="menu" class="ham" id="ham-btn" aria-label="Open menu"></ion-icon>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= MAIN CONTENT ======= -->
+  <main>
+
+    <!-- Hero / Slider Section -->
+    <section class="hero-section" aria-label="Featured products slider">
+      <div class="section1">
+        <div class="img-slider">
+          <img src="https://images.pexels.com/photos/6347888/pexels-photo-6347888.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Fashion collection" class="img">
+          <img src="https://images.pexels.com/photos/3962294/pexels-photo-3962294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Lifestyle products" class="img">
+          <img src="https://images.pexels.com/photos/2292953/pexels-photo-2292953.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=1260" alt="Accessories" class="img">
+          <img src="https://images.pexels.com/photos/1229861/pexels-photo-1229861.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Electronics" class="img">
+          <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="Home essentials" class="img">
+        </div>
+        <!-- Hero overlay text -->
+        <div class="hero-overlay">
+          <p class="hero-tagline">New Season. New Deals.</p>
+          <h2 class="hero-title">Shop the Latest Trends</h2>
+          <a href="#products" class="hero-cta">Explore Now <ion-icon name="arrow-forward"></ion-icon></a>
+        </div>
+        <!-- Slider dots -->
+        <div class="slider-dots" id="slider-dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="4"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="section2" id="products" aria-label="Product listings">
+      <div class="section-header">
+        <h1 class="section-title">Our Products</h1>
+        <p class="section-subtitle">Handpicked just for you — quality meets affordability</p>
+      </div>
+
+      <div class="container">
+
+        <article class="items" id="product-shoes">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/1464625/pexels-photo-1464625.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Shoes">
+            <span class="badge hot">HOT</span>
+          </div>
+          <div class="card-body">
+            <div class="name">SHOES</div>
+            <div class="info">Premium comfort for every step you take.</div>
+            <div class="card-footer">
+              <div class="price">$5.00</div>
+              <button class="add-btn" aria-label="Add Shoes to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-tshirt">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/3649765/pexels-photo-3649765.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Men's T-Shirt">
+            <span class="badge new">NEW</span>
+          </div>
+          <div class="card-body">
+            <div class="name">MEN'S T-SHIRT</div>
+            <div class="info">Soft cotton blend, modern slim fit.</div>
+            <div class="card-footer">
+              <div class="price">$6.34</div>
+              <button class="add-btn" aria-label="Add T-Shirt to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-jeans">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Jeans">
+          </div>
+          <div class="card-body">
+            <div class="name">JEANS</div>
+            <div class="info">Classic denim, all-day comfort.</div>
+            <div class="card-footer">
+              <div class="price">$9.00</div>
+              <button class="add-btn" aria-label="Add Jeans to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-watch">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/8839887/pexels-photo-8839887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Watch">
+            <span class="badge sale">SALE</span>
+          </div>
+          <div class="card-body">
+            <div class="name">WATCH</div>
+            <div class="info">Elegant timepiece for every occasion.</div>
+            <div class="card-footer">
+              <div class="price">$9.10</div>
+              <button class="add-btn" aria-label="Add Watch to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-smartphone">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/6858618/pexels-photo-6858618.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Smart Phone">
+            <span class="badge hot">HOT</span>
+          </div>
+          <div class="card-body">
+            <div class="name">SMART PHONE</div>
+            <div class="info">Next-gen performance in your pocket.</div>
+            <div class="card-footer">
+              <div class="price">$20.00</div>
+              <button class="add-btn" aria-label="Add Smart Phone to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-television">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/5552789/pexels-photo-5552789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Television">
+          </div>
+          <div class="card-body">
+            <div class="name">TELEVISION</div>
+            <div class="info">Crystal-clear display, immersive sound.</div>
+            <div class="card-footer">
+              <div class="price">$18.00</div>
+              <button class="add-btn" aria-label="Add Television to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-hoodies">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/4295985/pexels-photo-4295985.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Hoodies">
+            <span class="badge new">NEW</span>
+          </div>
+          <div class="card-body">
+            <div class="name">HOODIES</div>
+            <div class="info">Cozy warmth with streetwear style.</div>
+            <div class="card-footer">
+              <div class="price">$6.70</div>
+              <button class="add-btn" aria-label="Add Hoodie to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-dinner-set">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Dinner Set">
+          </div>
+          <div class="card-body">
+            <div class="name">DINNER SET</div>
+            <div class="info">Elegant tableware for every gathering.</div>
+            <div class="card-footer">
+              <div class="price">$10.00</div>
+              <button class="add-btn" aria-label="Add Dinner Set to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-blankets">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/6463348/pexels-photo-6463348.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Blankets">
+          </div>
+          <div class="card-body">
+            <div class="name">BLANKETS</div>
+            <div class="info">Ultra-soft, extra-warm blanket sets.</div>
+            <div class="card-footer">
+              <div class="price">$9.90</div>
+              <button class="add-btn" aria-label="Add Blanket to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-laptop">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/2659939/pexels-photo-2659939.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Laptop">
+            <span class="badge sale">SALE</span>
+          </div>
+          <div class="card-body">
+            <div class="name">LAPTOP</div>
+            <div class="info">Power and portability, redefined.</div>
+            <div class="card-footer">
+              <div class="price">$99.00</div>
+              <button class="add-btn" aria-label="Add Laptop to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-microwave">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/5824883/pexels-photo-5824883.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Microwave">
+          </div>
+          <div class="card-body">
+            <div class="name">MICROWAVE</div>
+            <div class="info">Fast, efficient, smart cooking.</div>
+            <div class="card-footer">
+              <div class="price">$30.00</div>
+              <button class="add-btn" aria-label="Add Microwave to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-coffee-maker">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Coffee Maker">
+          </div>
+          <div class="card-body">
+            <div class="name">COFFEE MAKER</div>
+            <div class="info">Barista-quality coffee, every morning.</div>
+            <div class="card-footer">
+              <div class="price">$29.70</div>
+              <button class="add-btn" aria-label="Add Coffee Maker to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-bed">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/6606354/pexels-photo-6606354.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Bed">
+            <span class="badge hot">HOT</span>
+          </div>
+          <div class="card-body">
+            <div class="name">BED</div>
+            <div class="info">Dreamy comfort for your best sleep.</div>
+            <div class="card-footer">
+              <div class="price">$100.00</div>
+              <button class="add-btn" aria-label="Add Bed to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-ac">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/4099468/pexels-photo-4099468.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Air Conditioner">
+          </div>
+          <div class="card-body">
+            <div class="name">AIR CONDITIONER</div>
+            <div class="info">Stay cool, stay comfortable all year.</div>
+            <div class="card-footer">
+              <div class="price">$78.00</div>
+              <button class="add-btn" aria-label="Add AC to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-book">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/1907785/pexels-photo-1907785.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Book">
+          </div>
+          <div class="card-body">
+            <div class="name">BOOK</div>
+            <div class="info">Expand your mind, feed your curiosity.</div>
+            <div class="card-footer">
+              <div class="price">$9.00</div>
+              <button class="add-btn" aria-label="Add Book to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-bag">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/4339598/pexels-photo-4339598.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Bag">
+            <span class="badge new">NEW</span>
+          </div>
+          <div class="card-body">
+            <div class="name">BAG</div>
+            <div class="info">Stylish bags for every adventure.</div>
+            <div class="card-footer">
+              <div class="price">$36.50</div>
+              <button class="add-btn" aria-label="Add Bag to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-sarees">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/2474657/pexels-photo-2474657.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Sarees">
+          </div>
+          <div class="card-body">
+            <div class="name">SAREES</div>
+            <div class="info">Traditional elegance, timeless beauty.</div>
+            <div class="card-footer">
+              <div class="price">$25.60</div>
+              <button class="add-btn" aria-label="Add Saree to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+        <article class="items" id="product-washing-machine">
+          <div class="img-wrap">
+            <img src="https://images.pexels.com/photos/5816934/pexels-photo-5816934.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Washing Machine">
+          </div>
+          <div class="card-body">
+            <div class="name">WASHING MACHINE</div>
+            <div class="info">Powerful clean, gentle on fabrics.</div>
+            <div class="card-footer">
+              <div class="price">$56.00</div>
+              <button class="add-btn" aria-label="Add Washing Machine to cart"><ion-icon name="cart"></ion-icon></button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer id="main-footer">
+    <div class="footer0">
+      <h2>Sho<span>P</span>perZ</h2>
+      <p class="footer-tagline">Quality you can trust. Prices you'll love.</p>
+    </div>
+
+    <div class="footer1">
+      <p>Connect with us</p>
+      <div class="social-media">
+        <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="#" aria-label="YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+      </div>
+    </div>
+
+    <div class="footer2">
+      <div class="footer-col">
+        <div class="footer-col-heading">Products</div>
+        <div class="footer-link">Sell your Products</div>
+        <div class="footer-link">Advertise</div>
+        <div class="footer-link">Pricing</div>
+        <div class="footer-link">Product Business</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-heading">Services</div>
+        <div class="footer-link">Returns</div>
+        <div class="footer-link">Cash Back</div>
+        <div class="footer-link">Affiliate Marketing</div>
+        <div class="footer-link">Others</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-heading">Company</div>
+        <div class="footer-link">Complaint</div>
+        <div class="footer-link">Careers</div>
+        <div class="footer-link">Affiliate Marketing</div>
+        <div class="footer-link">Support</div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-heading">Get Help</div>
+        <div class="footer-link">Help Center</div>
+        <div class="footer-link">Privacy Policy</div>
+        <div class="footer-link">Terms</div>
+        <div class="footer-link">Login</div>
+      </div>
+    </div>
+
+    <div class="footer3">
+      <span>Copyright &copy; <strong>ShoPperZ</strong> 2021-2028. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+  <script src="./script.js"></script>
+
+</body>
+</html>
